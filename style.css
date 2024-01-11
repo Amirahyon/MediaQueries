@@ -1,0 +1,73 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0%{
+        background-color: blanchedalmond;
+    }
+    20%{
+        background-color: pink;
+    }
+    50%{
+        background-color: red;
+    }
+}
+
+li{
+    list-style-type: none;
+    margin: .5rem;
+    padding: .5rem;
+}
+li:hover{
+    border-bottom: 1px solid pink;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+@media screen and (min-width: 1025px) {
+    body{
+        background-color: blanchedalmond;
+    }
+    ul{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
+
+#animate{
+    background-color: lightcoral;
+    color: white;
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    10%{
+        margin-left: 2rem;
+        transform: skewX(5px);
+    }
+    50%{
+        margin-left: 3rem;
+        transform: skewX(10px);
+    }
+    80%{
+        margin-left: 5rem;
+        transform: skewX(15px);
+    }
+}
